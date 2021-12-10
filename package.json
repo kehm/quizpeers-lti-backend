@@ -1,0 +1,41 @@
+{
+  "name": "quizpeers-lti-backend",
+  "version": "1.0.0",
+  "description": "Node.js REST API for the QuizPeers LTI",
+  "type": "module",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app",
+    "dev": "nodemon src/app",
+    "docker": "docker build -f Dockerfile -t quizpeers/api:latest ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kehm/quizpeers-lti-backend"
+  },
+  "author": "kehm",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "connect-session-sequelize": "^7.1.2",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.13.0",
+    "helmet": "^4.6.0",
+    "multer": "^1.4.3",
+    "oauth-sign": "^0.9.0",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.9.0",
+    "sharp": "^0.29.2"
+  }
+}
